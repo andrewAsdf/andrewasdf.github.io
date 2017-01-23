@@ -1,0 +1,29 @@
+<html>
+   <head>
+       <style>
+            @keyframes melon {
+                0% {transform: rotate(-30deg)}
+                50% {transform: rotate(150deg)}
+                100% {transform: rotate(330deg)}
+            }
+
+            div {
+                width: 500px;
+                height: 500px;
+                border-radius: 250px;
+                background: radial-gradient(#F00 30%, #FFF 60%, #0F0 100%);
+                display: block;
+                clip-path: polygon(0px 250px, 500px 250px, 500px 500px, 0px 500px);
+                transform: rotate(-30deg);
+                animation-name: melon;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+       </style>
+   </head>
+    <body>
+       <div/>
+    </body>
+</html>

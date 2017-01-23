@@ -1,0 +1,68 @@
+@media print
+{
+    div{
+        page-break-inside: avoid;
+    }
+}
+
+@font-face {
+    font-family: "Source Serif Pro";
+    src: url(SourceSerifPro-Regular.otf);
+}
+
+@font-face {
+    font-family: "Source Serif Pro Light";
+    src: url(SourceSerifPro-Light.otf);
+}
+
+@font-face {
+    font-family: "Source Serif Pro Semibold";
+    src: url(SourceSerifPro-Semibold.otf);
+}
+
+body {
+    margin: 1cm auto;
+    width: 15cm;
+    font-family: "Source Serif Pro";
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul {
+    line-height: 2;
+}
+
+img {
+    height: 6cm;
+}
+
+h1 {
+    font-weight: normal;
+    font-family: "Source Serif Pro Light";
+}
+
+h2 {
+    margin-top: 1cm;
+    font-family: "Source Serif Pro Light";
+}
+
+h3, h4 {
+    font-family: "Source Serif Pro Semibold";
+    font-weight: normal;
+}
+
+table { /*force table width*/
+    width: 100%;
+    line-height: 1.5;
+}
+
+strong {
+    font-family: "Source Serif Pro Semibold";
+}
+
+table.detail td:nth-of-type(even) {
+    text-align: right;
+    white-space: nowrap;
+}
